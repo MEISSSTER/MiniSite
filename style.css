@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
+
+@keyframes header_anim {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+  
+}
+
+
+.logo-group {
+    display: flex;
+    align-items: baseline; /* Чтобы буквы стояли на одной линии */
+    gap: 10px;             /* ВОТ ЭТОТ ПАРАМЕТР меняет близость h1 к h2 */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+ 
+    
+}
+body {
+  
+  background-color: #f0f2f5; 
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("bg.svg");
+  
+}
+
+.logo-group h1 {
+  font-family: 'Montserrat', sans-serif;
+  align-items: baseline;
+  font-size: 50px;
+  color: #1f22d2;
+  width: fit-content;
+
+  animation-name: header_anim;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.logo-group h2 {
+  font-family: 'Montserrat', sans-serif;
+  align-items: baseline;
+  font-size: 24px;
+  color: #d21f3d;
+  margin: 0;          /* Вместо 50 ставим 0 */
+  line-height: 1;     /* Уплотняем строку */
+  margin-top: -10px;  /* ЕСЛИ НУЖНО ЕЩЕ БЛИЖЕ — тянем вверх */
+
+  animation-name: header_anim;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Обращаемся ко всем ссылкам на странице */
+a {
+    text-decoration: none; /* Убирает линию снизу */
+    color: #1f22d2;        /* Меняет цвет на приятный зеленый */
+    font-weight: bold;     /* Можно еще сделать текст жирным, чтобы он выделялся */
+    gap: 0; /* Увеличивает расстояние между ссылкой и другими элементами */
+}
+
+/* Совет: добавьте эффект при наведении, чтобы пользователь понимал, что это ссылка */
+a:hover {
+    color: #27ae60;        /* Цвет станет чуть темнее при наведении мышки */
+    text-decoration: underline; /* Или линия будет появляться только при наведении */
+}
+
+p {
+  /* text-indent: 40px; Устанавливает отступ только для первой строки */
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+  color: #ffffff;
+  line-height: 1.5;
+  padding: 10px 10%;
+  
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  margin: 20px 0;
+  padding: 20px 10%;
+  text-indent: 20px; /* Устанавливает отступ для первой строки */
+}
+
+.center p{
+
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 25px; /* Увеличь это число, чтобы раздвинуть ссылки сильнее */
+}
+
+.div_left{
+  text-align: left;
+  gap: 10;
+
+}
