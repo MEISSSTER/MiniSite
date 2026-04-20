@@ -67,8 +67,9 @@ a {
     text-decoration: none; /* Убирает линию снизу */
     color: #1f22d2;        /* Меняет цвет на приятный зеленый */
     font-weight: bold;     /* Можно еще сделать текст жирным, чтобы он выделялся */
-    gap: 0; /* Увеличивает расстояние между ссылкой и другими элементами */
-}
+    gap: 25px; /* Увеличивает расстояние между ссылкой и другими элементами */
+
+  }
 
 /* Совет: добавьте эффект при наведении, чтобы пользователь понимал, что это ссылка */
 a:hover {
@@ -94,10 +95,82 @@ h1 {
   padding: 20px 10%;
   text-indent: 20px; /* Устанавливает отступ для первой строки */
 }
+.center h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 20px 0;
+    padding: 20px 10%;
+    text-indent: 20px; /* Устанавливает отступ для первой строки */
+
+}
 
 .center p{
-
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    color: #ffffff;
+    line-height: 1.5;
+    padding: 10px 10%;
+}
+
+.left p{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    color: #ffffff;
+    line-height: 1.5;
+   padding-left: 50px;
+    padding-right: 10px;
+    box-sizing: border-box; 
+    width: 60%; 
+    text-indent: 20px; /* Устанавливает отступ для первой строки */
+}
+
+.left h1{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin: 20px 0;
+    padding-left: 50px;
+    padding-right: 10px;
+    box-sizing: border-box; 
+    width: 100%; 
+    text-indent: 20px; /* Устанавливает отступ для первой строки */
+}
+.left h2{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 20px 0;
+    padding-left: 50px;
+    padding-right: 10px;
+    box-sizing: border-box; 
+    width: 100%; 
+    text-indent: 20px; /* Устанавливает отступ для первой строки */
+}
+
+.left h3{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 20px 0;
+    padding-left: 50px;
+    padding-right: 10px;
+    box-sizing: border-box; 
+    width: 100%; 
+    text-indent: 20px; /* Устанавливает отступ для первой строки */
+}
+
+.left .text_box {
+    background-color: #4d38ae; /* Цвет фона */
+    padding: 10px;           /* Отступы, создающие "квадрат" */
+    border-radius: 4px;       /* Необязательно: скругление углов */
+    display: inline-block;    /* Делает span блочным, но в строке */
 }
 
 nav {
