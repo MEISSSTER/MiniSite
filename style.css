@@ -11,55 +11,25 @@
   
 }
 
-
-.logo-group {
-    display: flex;
-    align-items: baseline; /* Чтобы буквы стояли на одной линии */
-    gap: 10px;             /* ВОТ ЭТОТ ПАРАМЕТР меняет близость h1 к h2 */
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  padding:0;
+  color: #ffffff;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: #fff;
- 
-    
+  background-color: #ffffff;
+  margin-top: 0.5%;
 }
+
 body {
-  
-  background-color: #f0f2f5; 
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   background-image: url("bg.svg");
-  
-}
-
-.logo-group h1 {
-  font-family: 'Montserrat', sans-serif;
-  align-items: baseline;
-  font-size: 50px;
-  color: #1f22d2;
-  width: fit-content;
-
-  animation-name: header_anim;
-  animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.logo-group h2 {
-  font-family: 'Montserrat', sans-serif;
-  align-items: baseline;
-  font-size: 24px;
-  color: #d21f3d;
-  margin: 0;          /* Вместо 50 ставим 0 */
-  line-height: 1;     /* Уплотняем строку */
-  margin-top: -10px;  /* ЕСЛИ НУЖНО ЕЩЕ БЛИЖЕ — тянем вверх */
-
-  animation-name: header_anim;
-  animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* Обращаемся ко всем ссылкам на странице */
@@ -68,7 +38,6 @@ a {
     color: #1f22d2;        /* Меняет цвет на приятный зеленый */
     font-weight: bold;     /* Можно еще сделать текст жирным, чтобы он выделялся */
     gap: 25px; /* Увеличивает расстояние между ссылкой и другими элементами */
-
   }
 
 /* Совет: добавьте эффект при наведении, чтобы пользователь понимал, что это ссылка */
@@ -81,25 +50,97 @@ p {
   /* text-indent: 40px; Устанавливает отступ только для первой строки */
   font-family: 'Montserrat', sans-serif;
   font-size:20px;
-  color: #ffffff;
-  line-height: 1.5;
-  padding: 10px 10%;
   
+  line-height: 1.5;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
-  color: #ffffff;
-  margin: 20px 0;
-  padding: 20px 10%;
   text-indent: 20px; /* Устанавливает отступ для первой строки */
 }
+
+nav {
+    display: flex;
+    gap: 25px; /* Увеличь это число, чтобы раздвинуть ссылки сильнее */
+    margin: 2%; /* Добавляет отступ сверху и снизу для навигации */
+}
+
+.logo-group {
+    display: flex;
+    align-items: baseline; /* Чтобы буквы стояли на одной линии */
+    gap: 1px;      
+}
+
+.logo-group h1 {
+  align-items: baseline;
+  font-size: 50px;
+  color: #1f22d2;
+  width: fit-content;
+
+  animation-name: header_anim;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.logo-group h2 {
+  
+  align-items: baseline;
+  font-size: 24px;
+  color: #d21f3d;
+  margin: 0;          /* Вместо 50 ставим 0 */
+  line-height: 1;     /* Уплотняем строку */
+  margin-top: -10px;  /* ЕСЛИ НУЖНО ЕЩЕ БЛИЖЕ — тянем вверх */
+
+  animation-name: header_anim;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.left{
+  text-align: left;
+  padding-right: 10px;
+  box-sizing: border-box; 
+  /* text-indent: 20px; */
+}
+
+.left p{
+    font-size:20px;
+    line-height: 1.5;
+    width: 60%; 
+    display: flex;
+    
+}
+
+.left h1{
+    font-size: 36px;     
+    width: 100%; 
+}
+.left h2{
+    font-size: 24px;
+    width: 100%; 
+}
+
+.left h3{
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 10px;
+    
+    width: 100%; 
+}
+
+.div_left{
+  text-align: left;
+  gap: 10;
+
+}
+
+
+.center {
+  text-align: center;
+}
 .center h1{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
-    color: #ffffff;
+     
     margin: 20px 0;
     padding: 20px 10%;
     text-indent: 20px; /* Устанавливает отступ для первой строки */
@@ -107,79 +148,24 @@ h1 {
 }
 
 .center p{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size:20px;
-    color: #ffffff;
+     
     line-height: 1.5;
     padding: 10px 10%;
 }
 
-.left p{
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size:20px;
-    color: #ffffff;
-    line-height: 1.5;
-   padding-left: 50px;
-    padding-right: 10px;
-    box-sizing: border-box; 
-    width: 60%; 
-    text-indent: 20px; /* Устанавливает отступ для первой строки */
+
+.main_container {
+  display: flex;
+  align-items: center;
 }
 
-.left h1{
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    color: #ffffff;
-    margin: 20px 0;
-    padding-left: 50px;
-    padding-right: 10px;
-    box-sizing: border-box; 
-    width: 100%; 
-    text-indent: 20px; /* Устанавливает отступ для первой строки */
-}
-.left h2{
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    color: #ffffff;
-    margin: 20px 0;
-    padding-left: 50px;
-    padding-right: 10px;
-    box-sizing: border-box; 
-    width: 100%; 
-    text-indent: 20px; /* Устанавливает отступ для первой строки */
-}
-
-.left h3{
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 20px 0;
-    padding-left: 50px;
-    padding-right: 10px;
-    box-sizing: border-box; 
-    width: 100%; 
-    text-indent: 20px; /* Устанавливает отступ для первой строки */
-}
-
-.left .text_box {
-    background-color: #4d38ae; /* Цвет фона */
-    padding: 10px;           /* Отступы, создающие "квадрат" */
-    border-radius: 4px;       /* Необязательно: скругление углов */
-    display: inline-block;    /* Делает span блочным, но в строке */
-}
-
-nav {
-    display: flex;
-    gap: 25px; /* Увеличь это число, чтобы раздвинуть ссылки сильнее */
-}
-
-.div_left{
-  text-align: left;
-  gap: 10;
-
+.text_box {
+  width: 60%; 
+  background-color: #4d38ae; /* Цвет фона */
+  padding: 15px;           /* Отступы, создающие "квадрат" */
+  border-radius: 10px;       /* Необязательно: скругление углов */
+  display: inline-block;    /* Делает span блочным, но в строке */
+  text-indent: 0px;
+  
 }
