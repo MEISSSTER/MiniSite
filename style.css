@@ -16,6 +16,13 @@
   margin:0;
   padding:0;
   color: #ffffff;
+
+  
+  font-size:17px;
+  
+  line-height: 1.5;
+
+  
 }
 
 .header {
@@ -47,16 +54,11 @@ a:hover {
 }
 
 p {
-  /* text-indent: 40px; Устанавливает отступ только для первой строки */
-  font-family: 'Montserrat', sans-serif;
-  font-size:20px;
-  
-  line-height: 1.5;
+  text-indent: 15px;  
 }
 
 h1 {
   font-size: 36px;
-  text-indent: 20px; /* Устанавливает отступ для первой строки */
 }
 
 nav {
@@ -67,12 +69,13 @@ nav {
 
 .logo-group {
     display: flex;
-    align-items: baseline; /* Чтобы буквы стояли на одной линии */
+    align-items: flex-end; /* Чтобы буквы стояли на одной линии */
     gap: 1px;      
 }
 
 .logo-group h1 {
-  align-items: baseline;
+  padding-left: 20%;
+  gap: 10px;
   font-size: 50px;
   color: #1f22d2;
   width: fit-content;
@@ -84,7 +87,6 @@ nav {
 
 .logo-group h2 {
   
-  align-items: baseline;
   font-size: 24px;
   color: #d21f3d;
   margin: 0;          /* Вместо 50 ставим 0 */
@@ -156,16 +158,34 @@ nav {
 
 
 .main_container {
-  display: flex;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .text_box {
-  width: 60%; 
+  
+  width: 80%; 
   background-color: #4d38ae; /* Цвет фона */
-  padding: 15px;           /* Отступы, создающие "квадрат" */
-  border-radius: 10px;       /* Необязательно: скругление углов */
-  display: inline-block;    /* Делает span блочным, но в строке */
+  padding: 25px;           /* Отступы, создающие "квадрат" */
+  border-radius: 15px;       /* Необязательно: скругление углов */
   text-indent: 0px;
   
+}
+
+.in_line {
+  display: flex;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;  
+  padding-top: 3%;   
+  padding-bottom: 4%;      /* Отступы, создающие "квадрат" */
+
+}
+
+.uv_class {
+  padding: 15px;
+}
+
+.uv_class li {
+  margin-bottom: 10px; 
 }
